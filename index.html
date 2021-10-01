@@ -1,76 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body{
-            font-family: monospace, sans-serif;
-        }
-    
-        
-        #nav-bar{
-            background-color: #aaf;
-            text-align: center;
-            align-content: center;
-            padding: 10px 0px 20px 0px;
-            font-family: sans-serif
-        }
-        .navigation{
-
-            
-            
-        }
-        .body{
-            background-color: #ddf;
-            align-content: center;
-            text-align: center;
-            padding-bottom: 20px;
-
-        }
-        .wrapper{
-            background-color: #ddf;
-        }
-        .nav-link{
-
-        }
-
-    </style>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Page</title>
+<style>
+
+
+:root{
+    --cl1:#66f;
+    --cl2:#aaf;
+    --cl3:#fff;
+    --cl4:#000;
+    --cl5:#ccf;
+}
+.header{
+    background-color:var(--cl1);
+    padding:20px;
+    flex-wrap: initial;
+    color:var(--cl3);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(50deg,var(--cl1),var(--cl5));
+    padding-bottom: 50px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:5%;
+}
+
+.nav{
+float: left;
+text-align: center;
+   text-shadow: black 3px 3px;
+}
+.header-img{
+    float: left;
+}
+.nav-link ul{
+    text-align: center;
+    list-style-type: none;
+    float:right;
+    text-decoration: none;
+    margin-right:15px;
     
-    <title>This Page Is For Ducks Only</title>
+    
+}
+.nav-link li{
+    display: inline;
+    background:linear-gradient(var(--cl2),var(--cl1)) ;
+    padding:10px;
+    border-radius: 10%;
+    
+    
+}
+.nav-link a{
+    text-decoration: none;
+}
+a:hover{
+    background-color:var(--cl3);
+    padding:10px;
+    border-radius: 10%;
+}
+a:active{
+    color:var(--cl4);
+}
+
+#line{
+    background-color:(var(--cl2));
+}
+body{
+    background-color: var(--cl5);
+    background: linear-gradient(60deg,var(--cl1),var(--cl3));
+    margin-top: 123px;
+
+}
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+@media(max-width:1280px){
+    #dotm{
+        width:150px;
+        height:150px
+    }
+    .maintxt{
+        float:left;
+    }
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media(max-width:600px){
+    h1{
+        font-size:20px;
+    }
+    ul{
+        font-size:10px;
+    }
+    #dotm{
+        height:100px;
+        width:100px;
+    }
+    p{
+        font-size:10px;
+    }
+    h2{
+        font-size:10px;
+    }
+    #dotm{
+        height:60px;
+        width:60px;
+    }
+}
+@media(max-width:358px){
+    .nav-link li{
+    }
+}
+
+@media(max-width:430px){
+    #dotm{
+        height:50px;
+        width:50px;
+    }
+    .nav-link{
+        right:10px;
+    }
+}
+
+
+
+@media(max-width:300px){
+    .nav-link li{
+        float:left;
+        margin-right:-10px;
+    }
+    #dotm{
+        height:45px;
+        width:45px;
+    }
+}
+p{
+
+}
+
+.maintxt{
+    float:left;
+    width:50%;
+    text-align: center;
+}
+.dotm{
+    width:25%;
+    float:right;
+    text-align: center;
+    border: groove var(--cl1);
+}
+#dotm{
+
+}
+
+.email{
+    float:inline-start;
+
+}
+.wrapper{
+ 
+}
+</style>
+
 </head>
 <body>
-<div class="wrapper">
-<div class="navigation">
-<h1 id="header">
-    <nav id="nav-bar">
+    <div class="wrapper">
 
-<img src="media/duckph.png" alt="placeholderlogo" height="180px" width="180px" id="header-img">
-<br>
+    <div class="header" id="header">
+
+<div class="header-img">
+
+<img src="media/Impostor.png" alt="ducklol" height="75px" width="75px" id="header-img"></div> 
+
+    <h1 class="nav" id="nav-bar">DucksOnly.com</h1>
 
 <div class="nav-link" id="nav-link">
-    <a href="#header" class="nav-link">Header</a>
+<ul>
+<li><a href="#main">MAIN</a></li>
+<li><a href="#email">SUBSCRIBE</a></li>
+<li><a href="#upload">UPLOAD</a></li>
 
-    <a href="#header" class="nav-link">Header</a>
 
-    <a href="#header" class="nav-link">Header</a>
+</ul>
+
+
 </div>
-</h1>
-</nav>
 </div>
+</div>
+<br>
+<hr id="line">
+<div class="maintxt">
+<h3 id="main">Ducks...</h3>
+    <iframe width="100%" height="300" src="https://www.youtube.com/embed/20JhWXf2LA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div class="body">
-<h1>This page is for ducks only!</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sYpvEiRnWNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ipsam doloremque, facilis saepe beatae dignissimos illo corporis recusandae esse sit. Facere est aliquam quia amet eius recusandae corporis ratione deleniti, voluptate assumenda exercitationem nobis, excepturi doloribus quibusdam neque cupiditate odit, ab minus consequatur eum aliquid sapiente officiis placeat? Quidem expedita voluptatum eveniet, at animi cupiditate veniam officia inventore accusantium vitae nemo iure distinctio impedit numquam omnis nisi. Odio voluptatem hic, perferendis possimus exercitationem sed provident voluptates sequi fugit dignissimos quo magni ab odit? Laborum repudiandae nostrum explicabo ipsum sit inventore possimus quod, esse quae velit eum consequatur facere placeat impedit, ullam reiciendis quos debitis iure laudantium quaerat nulla dolorem aperiam. Quis deserunt id quas reprehenderit quidem dolorum expedita molestias laborum velit nobis repellendus ex iure, doloribus dignissimos explicabo praesentium quam voluptatum, deleniti nostrum autem consequuntur possimus enim exercitationem! Porro sed consequuntur quibusdam cumque amet quae modi reiciendis, corrupti magnam incidunt autem omnis, blanditiis iure laboriosam praesentium ipsa dicta facere ullam reprehenderit facilis. Maiores natus corrupti molestias necessitatibus voluptas mollitia architecto aliquid id deserunt ut neque provident esse deleniti tenetur, facere repellendus maxime magnam. Earum sunt temporibus ipsa porro corporis inventore eveniet. Itaque inventore cupiditate numquam magnam odit pariatur temporibus delectus facilis fugiat omnis ipsa minus id, dolorem, sit voluptates. Doloremque nisi fuga officiis nostrum quae facere animi, nihil eos quo iste dolores eius odit ipsum, in saepe praesentium deserunt soluta autem eveniet unde. Rem quas nobis esse vero iusto nemo rerum ad provident impedit fugit, quaerat nulla unde quisquam nesciunt molestiae totam itaque natus iste quam delectus ab voluptates odio! Vero, molestias dolor modi consequatur animi magnam dignissimos? Inventore quibusdam laborum suscipit ipsum quis, excepturi saepe asperiores exercitationem modi illo eaque voluptatibus iste quaerat perspiciatis accusamus consequatur ipsam iure nam aut, dolorem incidunt. Hic quaerat qui odit rem tenetur dolorem cumque cupiditate temporibus ea fugiat, numquam non fugit adipisci eveniet explicabo culpa! Aliquid, iusto magni! Repudiandae unde magni reiciendis error dignissimos provident esse eveniet fugiat! Ipsam a saepe officia labore cum non quisquam consectetur beatae obcaecati, mollitia similique blanditiis illo? Velit libero ad repellendus officiis, sed dolores ab suscipit quibusdam ut beatae tempore illum pariatur odit dignissimos ipsum necessitatibus excepturi! Obcaecati perferendis repudiandae culpa tempore sit? Mollitia, cumque ab? In, perspiciatis pariatur odio consequuntur, quos praesentium labore sapiente commodi molestias enim voluptate fugit similique deserunt provident necessitatibus laborum eaque possimus cum obcaecati officiis ad quidem quod soluta animi. Incidunt libero esse obcaecati consequuntur, mollitia aut voluptate nam id quidem voluptatibus ad sapiente voluptatem? Vitae, rem maxime unde fugit quis totam voluptatibus, quibusdam at perferendis ea nobis quia excepturi nulla saepe fugiat beatae sit nostrum libero provident doloremque quam praesentium ullam assumenda quod! Nam dolore repellendus quis impedit ipsum enim delectus ut assumenda non cum, natus laboriosam nobis dolorem officiis sequi possimus consequuntur. Recusandae animi quo possimus, accusamus commodi hic repellat dignissimos quos vel. Ab quis maiores asperiores, laboriosam corporis nesciunt dicta odit! Incidunt magni impedit quisquam perferendis deserunt eligendi vel fugit cumque. Eum rerum sint eligendi saepe neque rem voluptates.</p>
+
 
 <br>
-
-<form action=" https://www.freecodecamp.com/email-submit">
-<input type="text" required placeholder="Email Address" id="email"> <button type="submit" id="submit">Submit</button>
+<h2>Subscribe For More Ducks!</h2>
+<div class="email" id="email">
+<form action="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">
+<input type="text" placeholder="Email Address" required>
+<button type="submit" id="submit">Submit</button>
 </form>
+</div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis iste, nemo reprehenderit ea porro mollitia minus illo deleniti cupiditate necessitatibus, nobis inventore, architecto facilis. Odit velit aspernatur architecto perspiciatis consectetur illo nesciunt aliquid eos, vel autem! Aut, hic! Eveniet, perspiciatis aut? Vitae molestias labore, cumque earum qui quia repellendus unde.</p>
 
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque cupiditate nemo totam placeat numquam quo tempore aperiam iste, nulla alias recusandae eius dolorem vel doloremque ipsam fugit quas illo porro exercitationem facilis, similique perferendis itaque fugiat ipsum? Eum, repudiandae quibusdam minima aut esse nesciunt vel dolorum hic mollitia enim, harum praesentium blanditiis alias. Nihil at est nobis consectetur, autem cupiditate, nemo sapiente ab quas cum iure amet placeat enim quia reiciendis beatae ex sed qui vitae repellat assumenda, nisi soluta delectus magnam? A, adipisci hic quasi possimus at dolorem minus? Maxime numquam vero ipsam cum quibusdam non labore aut perspiciatis molestiae ducimus incidunt adipisci eveniet ab quam, quas temporibus, ullam explicabo magni praesentium aliquid qui doloremque necessitatibus eaque. Ipsam fuga, facilis magni et blanditiis esse eos sit ut laudantium, voluptatum debitis, minima architecto explicabo. Odio esse velit incidunt, veniam quo ullam beatae. Quisquam, exercitationem id. Omnis ut, corrupti mollitia dignissimos eligendi officia a qui sequi aspernatur voluptates, nesciunt voluptas! Aperiam explicabo voluptate est excepturi commodi dolores vitae, necessitatibus voluptatibus blanditiis facere dolorum dignissimos nisi unde vero iure cum! Illum perspiciatis eos vero cupiditate dolores, blanditiis modi debitis dicta est voluptate exercitationem totam quaerat nemo odit aliquid. Aperiam alias numquam, ut itaque esse odio? Quibusdam nesciunt accusamus quos eum corrupti natus tempora, neque et, voluptates repudiandae impedit obcaecati consectetur autem ab magnam. Quam ratione eaque aperiam aspernatur eum quasi earum provident maiores totam doloremque quia at consectetur vitae magni qui, rerum nihil aliquam tempore, perspiciatis temporibus id, error iure. Ipsa, voluptatibus!</p></div></div>
+<h2>Upload Your Videos</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab numquam, voluptate nulla, porro laudantium ipsum ea nisi tenetur vitae perferendis. Aliquid similique sint sed corrupti in possimus exercitationem pariatur.</p>
+<div class="upload" id="upload">
+    <form action="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">
+        
+    <input type="text" placeholder="Video URL" required>
+    <button type="submit" id="upload">Upload</button>
+    </form>
+    </div>
+
+<hr>
+
+
+</div>
+
+
+<div class="dotm"><h2>Duck of The Month</h2>
+    <img src="media/duckie's kingdom.jpg" alt="ducklol" height="300px" width="300px" id="dotm">
+    <hr>
+    <p>Frank</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti rem tempore! Eaque dicta maiores amet repudiandae dolore sint asperiores perferendis illum cupiditate quaerat, commodi similique fugiat impedit quas, nihil nam assumenda ratione minus autem beatae vero ipsum officiis! Quasi similique, rerum, a ducimus nihil doloremque est accusantium non sit excepturi libero incidunt assumenda, qui iusto expedita quos nisi ea odio odit quae reprehenderit? Et quibusdam nam, debitis suscipit eum officiis accusantium, nisi quas, ea unde molestiae repellat laboriosam voluptatem omnis vero. Quod itaque perferendis velit cupiditate quas eaque nam.
+    </p>
+</div>
+
+</div>
+</div>
 </body>
+
 </html>
